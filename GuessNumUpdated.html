@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black flex justify-center items-center h-screen">
+    <div
+      class="bg-blue-400 w-200 h-140 flex justify-start items-center flex-col m-10 p-6 rounded-lg shadow-lg gap-3"
+    >
+      <h1 class="text-[42px] font-extrabold text-amber-200 pb-10 pt-8">
+        Guess The Number
+      </h1>
+      <div
+        class="text-xl flex justify-center items-center flex-col text-[24px]"
+      >
+        <p class="text-purple-600">Guess the number between 1 to 100 and</p>
+        <p class="text-amber-100 pb-4">enter it in the box below</p>
+      </div>
+      <input
+        type="text" id="input"
+        class="text-black-500 mt-4 border-2 border-black-300 rounded-md p-2"
+        placeholder="Enter your guess here"
+      />
+      <input
+        type="submit"
+        id="btn"
+        value="Submit"
+        class="mt-4 bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 cursor-pointer"
+      />
+      <p class="font-bold text-orange-400" id="oldNum" style="display: hidden;"></p>
+      <p class="text-rose-900">
+        Attempts Remaining: <span id="attempt" class="text-red-100">10</span>
+      </p>
+      <div id="but"></div>
+    </div>
+  </body>
+  <script src="Guess_Num.js"></script>
+</html>
